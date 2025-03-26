@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="/Home.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="welcome-text">Selamat Datang</div>
+    <nav class="nav-menu">
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Aboutme.html">About Me</a></li>
+            <li><a href="/Kontak.html">Kontak</a></li>
+            <li><a href="/Pemprgramanweb.html">Pemprograman Web</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- KONTEN UTAMA -->
+<main class="container">
+
+    <!-- Profil -->
+    <section class="profile">
+        <div class="identity">
+            <h2>Hidayanthi Dwi Puja</h2>
+            <p>4B Informatika - Fakultas Ilmu Komputer</p>
+            <p>Universitas Singaperbangsa Karawang</p>
+        </div>
+    </section>
+
+    <!-- Formulir Tinggalkan Pesan -->
+    <section class="contact-form">
+        <h2>Tinggalkan Pesan</h2>
+        <form id="contact-form-main">  <!-- Sesuai dengan ID di JS -->
+            <input type="text" id="name" placeholder="Nama" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="subject" placeholder="Subjek" required>
+            <textarea id="message" placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+</main>
+
+<!-- SCRIPT -->
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector('.nav-links');
+        nav.classList.toggle('active');
+    }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("6uZ4LOcE8wXpyRq_Q"); // Ganti dengan Public Key EmailJS
+        })();
+    
+        document.getElementById("contact-form-main").addEventListener("submit", function(event) {
+            event.preventDefault();
+    
+            emailjs.send("service_js0qybo", "template_vgs8m3d", { // Ganti dengan ID yang benar
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value
+            })
+            .then(function(response) {
+                alert("Pesan berhasil dikirim!");
+            }, function(error) {
+                alert("Gagal mengirim pesan. Error: " + error.text);
+            });
+        });
+        function toggleMenu() {
+            const navMenu = document.querySelector(".nav-menu");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

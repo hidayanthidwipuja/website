@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="/Home.css">
+    <script defer src="script.js"></script> <!-- Load JavaScript dengan "defer" -->
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Aboutme.html">About</a></li>
+                <li><a href="/Kontak.html"></a>Kontak</li>
+                <li><a href="/Pemprgramanweb.html">Pemprograman Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <img src="/aku.jpg" alt="ini aku" class="profile-pic">
+        <h2>Hidayanthi Dwi Puja</h2>
+        <div>
+            <h2><b>Overview</b></h2>
+            <p>Halo semua, Website ini merupakan hasil karya Hidayanthi Dwi Puja, yang merupakan Mahasiswi 
+                Semester 4 Informatika di Universitas Singaperbangsa Karawang. Yang pada saat ini mempunyai minat dibidang website.
+            </p>
+            <p>Pada kali ini saya membuat website portofolio yang memiliki tujuan berbagi Ilmu pengetahuan Pemprograman Web.
+                Saya percaya dengan adanya website ini saya bisa memulai belajar dan berbagi pengalaman saya kepada semua orang yang membaca website ini.
+            </p>
+        </div>
+        <div class="id">
+            <h3>Skilss</h3>
+        <ul class="skill-list">
+            <li>HTML, CSS, JavaScript</li>
+            <li>PHP & Mysql</li>
+            <li>UI/UX</li>
+        </ul>
+        <h3>Pengalaman</h3>
+        <ul class="pengalaman-list">
+            <li>Mengerjakan beberapa Projek fleelance dalam pengembangan web dan berkolaborasi pada tim</li>
+            <li>Aktif dalam komunitas coding</li>
+        </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Hidayanthi Dwi Puja</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector(".nav-menu");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

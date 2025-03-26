@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Home.css">
+    <script defer src="script.js"></script> <!-- Load JavaScript dengan "defer" -->
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Aboutme.html">About Me</a></li>
+                <li><a href="/Kontak.html">Kontak</a></li>
+                <li><a href="/Pemprgramanweb.html">Pemprograman Web</a></li>
+            </ul>
+        </nav>
+    </header>
+     <section class="container">
+        <img src="/aku.jpg" alt="Foto aku" class="profile-pic">
+        <h2>Hidayanthi Dwi Puja</h2>
+        <div class="M&b">
+            <h3>Pendidikan</h3>
+            <p>Saya adalah mahasiswa di Universitas Singaperbangsa Karawang Jurusan Informatika
+            </p>
+            <h3>Minat</h3>
+        <p>
+            Saya memiliki ketertarikan yang mendalam dalam pengembangan web dan teknologi digital. Saya senang mempelajari tren terbaru dalam desain UI/UX dan membangun aplikasi yang responsif serta user-friendly. 
+            Saya percaya bahwa sebuah website atau aplikasi yang baik tidak hanya berfungsi dengan baik, tetapi juga memberikan pengalaman yang nyaman bagi penggunanya. 
+            Oleh karena itu, saya selalu berusaha memperdalam pemahaman saya tentang desain interaksi, aksesibilitas, serta optimasi performa website agar lebih cepat dan efisien.
+            Selain itu, saya juga tertarik untuk mengembangkan aplikasi berbasis web yang dapat menyelesaikan permasalahan sehari-hari, 
+            baik dalam dunia bisnis, pendidikan, maupun hiburan. Saya senang bereksperimen dengan berbagai teknologi seperti HTML, CSS, JavaScript, serta framework modern seperti React dan Laravel 
+            untuk menciptakan solusi digital yang inovatif. Dengan semangat belajar yang tinggi, saya terus mengikuti perkembangan teknologi terbaru agar dapat menciptakan aplikasi yang tidak hanya fungsional,
+            tetapi juga mengikuti standar industri dan kebutuhan pengguna saat ini
+        </p>
+        <h3>Pengalaman</h3>
+        <p>
+            Saya memiliki pengalaman dalam mengembangkan aplikasi berbasis web menggunakan Laravel dan React. Dalam perjalanan ini, saya telah membangun berbagai fitur interaktif yang membantu meningkatkan efisiensi dan pengalaman pengguna. 
+            Saya memahami pentingnya backend yang kuat dan frontend yang responsif, sehingga saya selalu memastikan integrasi antara kedua aspek tersebut berjalan dengan optimal. Selain itu,
+            saya juga memiliki pengalaman dalam mengelola database menggunakan MySQL dan Firebase, serta mengoptimalkan performa aplikasi agar lebih cepat dan scalable."
+            Saya juga telah bekerja sama dalam tim untuk membangun aplikasi manajemen data untuk organisasi kampus. 
+            Dalam proyek ini, saya berperan dalam merancang arsitektur sistem, mengimplementasikan API, serta memastikan data dapat diakses dengan mudah dan aman oleh pengguna. 
+            Kolaborasi dalam tim menjadi pengalaman berharga bagi saya, di mana saya belajar bagaimana bekerja secara efektif dengan developer lain, memahami kebutuhan klien, serta menerapkan metodologi Agile dalam pengembangan perangkat lunak. 
+            Dengan pengalaman ini, saya semakin percaya diri dalam mengembangkan aplikasi yang dapat memberikan dampak nyata bagi pengguna dan organisasi.
+        </p>
+        </div>
+     </section>
+     <footer>
+        <p>&copy; Hidayanthi Dwi Puja </p>
+     </footer>
+     <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector(".nav-menu");
+            navMenu.classList.toggle("active");
+        }
+     </script>
+</body>
+</html>
